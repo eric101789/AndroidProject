@@ -22,11 +22,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt = findViewById(R.id.button);
 
         bt.setOnClickListener(this);
+        tx.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        tx.setTextColor(Color.BLUE);
+        switch(view.getId()) {
+            case R.id.textView:
+                tx.setTextColor(Color.RED);
+                tx.setText("Hello World!");
+                break;
+            case R.id.button:
+                tx.setTextColor(Color.BLUE);
+                tx.setText("點我、點我");
+        }
+        //tx.setTextColor(Color.BLUE);
     }
 
 
