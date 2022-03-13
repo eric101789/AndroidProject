@@ -20,9 +20,18 @@ public class MainActivity extends AppCompatActivity {
 
         tx = findViewById(R.id.textView);
         bt = findViewById(R.id.button);
-    }
 
-    public void onButtonClick(View view) {
+        bt.setOnClickListener(myClickListener);
+    }
+private View.OnClickListener myClickListener = new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
         tx.setTextColor(Color.BLUE);
     }
+};
+
+
+//    public void onButtonClick(View view) {
+//        tx.setTextColor(Color.BLUE);
+//    }
 }
