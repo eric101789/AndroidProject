@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView tx;
     Button bt;
@@ -21,14 +21,21 @@ public class MainActivity extends AppCompatActivity {
         tx = findViewById(R.id.textView);
         bt = findViewById(R.id.button);
 
-        bt.setOnClickListener(myClickListener);
+        bt.setOnClickListener(this);
     }
-private View.OnClickListener myClickListener = new View.OnClickListener() {
+
     @Override
     public void onClick(View view) {
         tx.setTextColor(Color.BLUE);
     }
-};
+
+
+//private View.OnClickListener myClickListener = new View.OnClickListener() {
+//    @Override
+//    public void onClick(View view) {
+//        tx.setTextColor(Color.BLUE);
+//    }
+//};
 
 
 //    public void onButtonClick(View view) {
