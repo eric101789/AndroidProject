@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView tx;
-    Button bt;
+//    Button bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         tx = findViewById(R.id.textView);
-        bt = findViewById(R.id.button);
+        //bt = findViewById(R.id.button);
 
-        bt.setOnClickListener(this);
+//        bt.setOnClickListener(this);
         tx.setOnClickListener(this);
     }
 
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 tx.setTextColor(Color.RED);
                 tx.setText("Hello World!");
                 break;
-            case R.id.button:
-                tx.setTextColor(Color.BLUE);
-                tx.setText("點我、點我");
+//            case R.id.button:
+//                tx.setTextColor(Color.BLUE);
+//                tx.setText("點我、點我");
         }
         //tx.setTextColor(Color.BLUE);
     }
