@@ -9,36 +9,23 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_marginStart="16dp"
         android:text="Button Two"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        tools:layout_editor_absoluteY="320dp" />
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="320dp"
+        app:layout_constraintCircle="@+id/button"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintCircleAngle="45"
+        />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="264dp"
         android:text="Button One"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.76" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
